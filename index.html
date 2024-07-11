@@ -4,25 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Data Table</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Datos de la API</h1>
-    <input type="text" id="search-input" placeholder="Buscar persona" />
-    <button type="button" onclick="searchPerson()">Buscar persona</button>
-    <button type="button" onclick="sortByName()">Ordenar por nombre</button>
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Buscar persona" />
+        <button type="button" onclick="searchPerson()">Buscar persona</button>
+        <button type="button" onclick="sortByName()">Ordenar por nombre</button>
+    </div>
     <table id="data-table">
         <thead>
             <tr id="table-header">
