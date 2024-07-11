@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Datos de la API</h1>
+    <input type="text" id="search-input" placeholder="Buscar persona" />
+    <button type="button" onclick="searchPerson()">Buscar persona</button>
+    <button type="button" onclick="sortByName()">Ordenar por nombre</button>
+    <table id="data-table">
+        <thead>
+            <tr id="table-header">
+                <!-- Los encabezados de la tabla se llenarán dinámicamente -->
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Los datos de la tabla se llenarán dinámicamente -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
